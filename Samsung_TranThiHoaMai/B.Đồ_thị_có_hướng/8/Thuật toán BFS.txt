@@ -1,0 +1,5 @@
+-Thuật toán BFS (Breadth-First Search) không đảm bảo kết quả là một thứ tự tô pô vì nó không xem xét quan hệ giữa các đỉnh trong đồ thị. BFS chỉ đảm bảo đánh dấu các đỉnh theo khoảng cách tăng dần tới đỉnh nguồn của chúng, mà không quan tâm đến vị trí hoặc thứ tự của các đỉnh trong cùng một cấp khoảng cách.
+
+-Khi chạy BFS trên một đồ thị, thuật toán sẽ khám phá tất cả các đỉnh có thể đạt được từ đỉnh nguồn trong một cấp khoảng cách trước khi đi vào cấp khoảng cách tiếp theo. Điều này đảm bảo rằng các đỉnh gần nhất đến đỉnh nguồn sẽ được đánh dấu trước, các đỉnh gần hơn sẽ được đánh dấu sau đó và các đỉnh xa hơn sẽ được đánh dấu cuối cùng.
+
+-Tuy nhiên, trong mỗi cấp khoảng cách, không có quy tắc cụ thể nào để đảm bảo thứ tự tô pô của các đỉnh. Vì thế, các đỉnh có cùng khoảng cách từ đỉnh nguồn có thể được đánh dấu theo bất kỳ thứ tự nào trong quá trình chạy BFS. Điều này dẫn đến việc các đỉnh có cùng khoảng cách có thể được đánh dấu theo các thứ tự khác nhau trong các lần chạy khác nhau của thuật toán.

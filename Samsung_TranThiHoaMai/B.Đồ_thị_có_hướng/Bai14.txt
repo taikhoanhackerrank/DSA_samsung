@@ -1,0 +1,25 @@
+Số lượng đồ thị có hướng phi chu trình chứa V đỉnh có thể tính bằng cách sử dụng nguyên lý cơ bản trong lý thuyết đồ thị.
+
+Đầu tiên, chúng ta cần xác định số lượng đỉnh trong đồ thị phi chu trình có hướng. Một đồ thị có hướng phi chu trình có ít nhất 1 chu trình, và mỗi chu trình chứa ít nhất 3 đỉnh. Do đó, số lượng đỉnh của đồ thị không thể nhỏ hơn 3.
+
+Tiếp theo, chúng ta sẽ xem xét các trường hợp cụ thể:
+
+1.Khi V = 3: Với 3 đỉnh, chúng ta có thể tạo 2 đồ thị có hướng phi chu trình, bởi vì mỗi đỉnh có thể là điểm đầu, và các đỉnh còn lại lần lượt là điểm kết thúc để tạo thành một chu trình.
+
+2.Khi V > 3: Với số lượng đỉnh lớn hơn 3, chúng ta có thể sử dụng công thức như sau để tính số lượng đồ thị có hướng phi chu trình:
+
+Số lượng đồ thị có hướng phi chu trình chứa V đỉnh = 2^(V*(V-1)/2) - 2^(V-1)
+
+Trong đó:
+
+V*(V-1)/2 là số cặp đỉnh không giống nhau trong đồ thị đầy đủ có V đỉnh (không tính đỉnh đối xứng).
+2^(V*(V-1)/2) là số lượng đồ thị có hướng có thể tạo ra từ các cặp đỉnh không giống nhau.
+2^(V-1) là số lượng đồ thị có hướng không chứa chu trình (đồ thị vòng tròn).
+
+=> Số lượng đồ thị có hướng phi chu trình chứa 4 đỉnh 
+= 2^(4*(4-1)/2) - 2^(4-1)
+= 2^6 - 2^3
+= 64 - 8
+= 56
+
+Do đó, có tổng cộng 56 đồ thị có hướng phi chu trình chứa 4 đỉnh.

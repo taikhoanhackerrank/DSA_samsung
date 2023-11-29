@@ -1,0 +1,9 @@
+Số lượng đồ thị vô hướng khác nhau có V đỉnh và E cạnh (không có cạnh song song) có thể được tính bằng công thức như sau:
+
+Số đồ thị = V^(E - V + 1)
+
+Công thức này dựa trên kỹ thuật đếm mạnh mẽ, gọi là kỹ thuật cắm và chèn (stars and bars), trong đó E - V + 1 cung cấp một số lượng cạnh rỗng (không nối giữa các đỉnh) để chèn vào giữa các đỉnh đã cho.
+
+Ví dụ:
+Nếu có V = 4 đỉnh và E = 5 cạnh, số lượng đồ thị vô hướng khác nhau sẽ là:
+Số đồ thị = 4^(5 - 4 + 1) = 4^2 = 16

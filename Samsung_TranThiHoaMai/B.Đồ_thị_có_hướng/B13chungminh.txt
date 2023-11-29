@@ -1,0 +1,14 @@
+-Một đồ thị có hướng có thể chứa tối đa V*(V-1) cạnh, trong đó V là số đỉnh của đồ thị. Điều này xuất phát từ việc mỗi đỉnh có thể có V-1 cạnh đi ra khỏi nó.
+
+-Với số đỉnh V và không có cạnh song song, số cạnh tối đa trong một đồ thị có hướng là V*(V-1). Chúng ta cần xác định xem có bao nhiêu đồ thị có thể có E cạnh.
+
+-Sử dụng phương pháp quy nạp. Ta sẽ xem xét từng số cạnh E từ 0 đến V*(V-1) và đếm xem có bao nhiêu cách để xây dựng một đồ thị có hướng với E cạnh trong V đỉnh.
+-Khi E = 0, không có cạnh nào tồn tại trong đồ thị. Điều này chỉ có một cách để xây dựng đồ thị, đó là không có cạnh nào.
+
+-Khi E = 1, chỉ có một cạnh tồn tại trong đồ thị. Điều này chỉ có một cách để xây dựng đồ thị, bằng cách chọn một cặp đỉnh bất kỳ và thêm một cạnh nối chúng.
+
+-Khi E = 2, có hai cạnh tồn tại trong đồ thị. Để xây dựng đồ thị, chúng ta có thể chọn một cặp đỉnh bất kỳ và thêm một cạnh nối chúng. Sau đó, chúng ta có thể chọn một cặp đỉnh khác và thêm một cạnh nối chúng. Tổng cộng có V*(V-1) cách để chọn hai cạnh từ V đỉnh.
+
+-Tiếp tục quy nạp, khi E = 3, ta có V*(V-1)(V-2) cách để chọn ba cạnh từ V đỉnh. Tương tự, khi E = k, ta có V(V-1)(V-2)...*(V-k+1) cách để chọn k cạnh từ V đỉnh.
+
+Khi E = V*(V-1), chúng ta đã đạt được số cạnh tối đa trong một đồ thị có hướng V đỉnh. Do đó, có tất cả V*(V-1) cách để xây dựng một đồ thị có hướng V đỉnh không chứa cạnh song song.

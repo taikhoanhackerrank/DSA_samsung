@@ -1,0 +1,39 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <cmath>
+#include <climits>
+
+using namespace std;
+
+typedef pair<int, int> pii; // Pair of weight and vertex
+typedef pair<double, double> Point; // Euclidean point
+
+double euclideanDistance(const Point& a, const Point& b) {
+    return sqrt(pow(a.first - b.first, 2) + pow(a.second - b.second, 2));
+}
+
+int main() {
+    int V, E;
+    cin >> V >> E;
+
+    vector<Point> vertices(V);
+    vector<vector<pii>> adj(V);
+
+    for (int i = 0; i < V; i++) {
+        cin >> vertices[i].first >> vertices[i].second;
+    }
+
+    for (int i = 0; i < E; i++) {
+        int u, v;
+        cin >> u >> v;
+        double weight = euclideanDistance(vertices[u], vertices[v]);
+        adj[u].push_back({v, weight});
+        adj[v].push_back({u, weight}); // If undirected
+    }
+
+    // Rest of Dijkstra's algorithm...
+    // ...
+
+    return 0;
+}
